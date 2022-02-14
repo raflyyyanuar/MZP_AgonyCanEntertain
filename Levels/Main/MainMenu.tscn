@@ -1,0 +1,60 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://asset/image/wallpapersden.com_topography-abstract-black-texture_wxl.jpg" type="Texture" id=1]
+[ext_resource path="res://Levels/Main/MainMenu.gd" type="Script" id=2]
+
+[node name="MainMenu" type="CanvasLayer"]
+script = ExtResource( 2 )
+
+[node name="WallpapersdencomTopography-abstract-black-textureWxl" type="Sprite" parent="."]
+scale = Vector2( 2.058, 2.087 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="Label" type="Label" parent="."]
+margin_left = 601.0
+margin_top = 248.0
+margin_right = 679.0
+margin_bottom = 279.0
+text = "ERA OF EON
+(PROTOYPE)"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -250.0
+margin_top = -22.0
+margin_right = 250.0
+margin_bottom = 22.0
+rect_scale = Vector2( 0.997253, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayButton" type="Button" parent="VBoxContainer"]
+margin_right = 500.0
+margin_bottom = 20.0
+text = "PLAY"
+
+[node name="PlayButton2" type="Button" parent="VBoxContainer"]
+margin_top = 24.0
+margin_right = 500.0
+margin_bottom = 44.0
+text = "PLAY (WITHOUT OPENING CUTSCENE)"
+
+[node name="QuitButton" type="Button" parent="VBoxContainer"]
+margin_top = 48.0
+margin_right = 500.0
+margin_bottom = 68.0
+text = "QUIT"
+
+[connection signal="pressed" from="VBoxContainer/PlayButton" to="." method="_on_PlayButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/PlayButton2" to="." method="_on_PlayButton2_pressed"]
+[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_QuitButton_pressed"]

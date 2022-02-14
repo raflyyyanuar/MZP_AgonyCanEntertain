@@ -1,0 +1,655 @@
+[gd_scene load_steps=28 format=2]
+
+[ext_resource path="res://Levels/Main/L_Main.gd" type="Script" id=1]
+[ext_resource path="res://Levels/Main/Environment.tres" type="Environment" id=2]
+[ext_resource path="res://Levels/Main/DeathZone.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Levels/Main/Geometry/Wall.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Levels/Main/Geometry/Floor.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Levels/Main/Geometry/Cube.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Levels/Main/Tree.tscn" type="PackedScene" id=8]
+[ext_resource path="res://BadGuy.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Levels/Main/Materials/T_Grid.png" type="Texture" id=10]
+
+[sub_resource type="SpatialMaterial" id=1]
+params_diffuse_mode = 1
+albedo_texture = ExtResource( 10 )
+metallic_specular = 0.0
+uv1_scale = Vector3( 0.5, 0.5, 0.5 )
+uv1_offset = Vector3( 0.5, 0.5, 0.5 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=2]
+params_diffuse_mode = 1
+albedo_texture = ExtResource( 10 )
+metallic_specular = 0.0
+uv1_scale = Vector3( 0.5, 0.5, 0.5 )
+uv1_offset = Vector3( 0.5, 0.5, 0.5 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=3]
+params_diffuse_mode = 1
+albedo_texture = ExtResource( 10 )
+metallic_specular = 0.0
+uv1_scale = Vector3( 0.5, 0.5, 0.5 )
+uv1_offset = Vector3( 0.5, 0.5, 0.5 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=4]
+params_diffuse_mode = 1
+albedo_texture = ExtResource( 10 )
+metallic_specular = 0.0
+uv1_scale = Vector3( 0.5, 0.5, 0.5 )
+uv1_offset = Vector3( 0.5, 0.5, 0.5 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=5]
+params_diffuse_mode = 1
+albedo_texture = ExtResource( 10 )
+metallic_specular = 0.0
+uv1_scale = Vector3( 0.5, 0.5, 0.5 )
+uv1_offset = Vector3( 0.5, 0.5, 0.5 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=6]
+params_diffuse_mode = 1
+albedo_texture = ExtResource( 10 )
+metallic_specular = 0.0
+uv1_scale = Vector3( 0.5, 0.5, 0.5 )
+uv1_offset = Vector3( 0.5, 0.5, 0.5 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=7]
+params_diffuse_mode = 1
+albedo_texture = ExtResource( 10 )
+metallic_specular = 0.0
+uv1_scale = Vector3( 0.5, 0.5, 0.5 )
+uv1_offset = Vector3( 0.5, 0.5, 0.5 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=8]
+params_diffuse_mode = 1
+albedo_texture = ExtResource( 10 )
+metallic_specular = 0.0
+uv1_scale = Vector3( 0.5, 0.5, 0.5 )
+uv1_offset = Vector3( 0.5, 0.5, 0.5 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=9]
+params_diffuse_mode = 1
+albedo_texture = ExtResource( 10 )
+metallic_specular = 0.0
+uv1_scale = Vector3( 0.5, 0.5, 0.5 )
+uv1_offset = Vector3( 0.5, 0.5, 0.5 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=10]
+params_diffuse_mode = 1
+albedo_texture = ExtResource( 10 )
+metallic_specular = 0.0
+uv1_scale = Vector3( 0.5, 0.5, 0.5 )
+uv1_offset = Vector3( 0.5, 0.5, 0.5 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=11]
+params_diffuse_mode = 1
+albedo_texture = ExtResource( 10 )
+metallic_specular = 0.0
+uv1_scale = Vector3( 0.5, 0.5, 0.5 )
+uv1_offset = Vector3( 0.5, 0.5, 0.5 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=12]
+params_diffuse_mode = 1
+albedo_texture = ExtResource( 10 )
+metallic_specular = 0.0
+uv1_scale = Vector3( 0.5, 0.5, 0.5 )
+uv1_offset = Vector3( 0.5, 0.5, 0.5 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=13]
+params_diffuse_mode = 1
+albedo_texture = ExtResource( 10 )
+metallic_specular = 0.0
+uv1_scale = Vector3( 0.5, 0.5, 0.5 )
+uv1_offset = Vector3( 0.5, 0.5, 0.5 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=14]
+params_diffuse_mode = 1
+albedo_texture = ExtResource( 10 )
+metallic_specular = 0.0
+uv1_scale = Vector3( 0.5, 0.5, 0.5 )
+uv1_offset = Vector3( 0.5, 0.5, 0.5 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=15]
+params_diffuse_mode = 1
+albedo_texture = ExtResource( 10 )
+metallic_specular = 0.0
+uv1_scale = Vector3( 0.5, 0.5, 0.5 )
+uv1_offset = Vector3( 0.5, 0.5, 0.5 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=16]
+params_diffuse_mode = 1
+albedo_texture = ExtResource( 10 )
+metallic_specular = 0.0
+uv1_scale = Vector3( 0.5, 0.5, 0.5 )
+uv1_offset = Vector3( 0.5, 0.5, 0.5 )
+uv1_triplanar = true
+
+[sub_resource type="SpatialMaterial" id=17]
+params_diffuse_mode = 1
+albedo_texture = ExtResource( 10 )
+metallic_specular = 0.0
+uv1_scale = Vector3( 0.5, 0.5, 0.5 )
+uv1_offset = Vector3( 0.5, 0.5, 0.5 )
+uv1_triplanar = true
+
+[node name="L_Main" type="Spatial"]
+script = ExtResource( 1 )
+
+[node name="Player" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -13 )
+mouse_sensitivity = null
+head_path = null
+cam_path = null
+hand_path = null
+handLoc_path = null
+muzzle_path = null
+aimcast_path = null
+FOV = null
+gravity = null
+walk_speed = null
+sprint_speed = null
+acceleration = null
+deacceleration = null
+air_control = null
+jump_height = null
+health = null
+
+[node name="ArenaGeometry" type="Spatial" parent="."]
+
+[node name="Cube" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -15, 5, -42 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube2" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -15, 5, -52 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube3" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 15, 4, -52 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube4" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 15, 14, -52 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube5" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 15, 4, -62 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube6" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 15, 14, -62 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube7" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 5, 4, -62 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube8" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 5, 14, -62 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube9" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -5, 4, -62 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube10" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -5, 14, -62 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube13" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 4, 0, 0, 0, 0.4374, 0, 0, 0, 4, 0, 18, -71 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube14" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 4, 0, 0, 0, 0.4374, 0, 0, 0, 4, 2, 18, -79 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube15" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 4, 0, 0, 0, 0.4374, 0, 0, 0, 4, 4, 18, -87 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube16" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 4, 0, 0, 0, 0.4374, 0, 0, 0, 4, 4, 19, -100 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube17" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 4, 0, 0, 0, 0.4374, 0, 0, 0, 4, 2, 19, -108 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube18" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 4, 0, 0, 0, 0.4374, 0, 0, 0, 4, 2, 20, -120 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube19" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 4, 0, 0, 0, 0.4374, 0, 0, 0, 4, 0, 20, -128 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube20" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 4, 0, 0, 0, 0.4374, 0, 0, 0, 4, 2, 21, -139 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube21" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 4, 0, 0, 0, 0.4374, 0, 0, 0, 4, 0, 21, -147 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube11" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -15, 4, -62 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube12" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -15, 14, -62 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube22" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 5, 0, 0, 0, 6.6, 0, 0, 0, 5, 15, 2, -155 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube23" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 5, 0, 0, 0, 6.6, 0, 0, 0, 5, 15, 15, -155 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube24" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 5, 0, 0, 0, 6.6, 0, 0, 0, 5, 5, 2, -155 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube25" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 5, 0, 0, 0, 6.6, 0, 0, 0, 5, 5, 15, -155 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube26" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 5, 0, 0, 0, 6.6, 0, 0, 0, 5, -5, 2, -155 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube27" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 5, 0, 0, 0, 6.6, 0, 0, 0, 5, -5, 15, -155 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube28" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 5, 0, 0, 0, 6.6, 0, 0, 0, 5, -15, 2, -155 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube29" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 5, 0, 0, 0, 6.6, 0, 0, 0, 5, -15, 15, -155 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube30" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( -5, 0, 0, 0, 0.4374, 0, 0, 0, 4, 0, 21, -164 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube31" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( -5, 0, 0, 0, 0.4374, 0, 0, 0, 4, 2, 21, -172 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube32" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( -5, 0, 0, 0, 0.4374, 0, 0, 0, 4, 4, 21, -180 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube33" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( -5, 0, 0, 0, 0.4374, 0, 0, 0, 4, 4, 22, -193 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube34" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( -5, 0, 0, 0, 0.4374, 0, 0, 0, 4, 2, 22, -201 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube35" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( -5, 0, 0, 0, 0.4374, 0, 0, 0, 4, 2, 23, -213 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube36" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( -5, 0, 0, 0, 0.4374, 0, 0, 0, 4, 0, 23, -221 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube37" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( -5, 0, 0, 0, 0.4374, 0, 0, 0, 4, 2, 24, -232 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube38" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( -5, 0, 0, 0, 0.4374, 0, 0, 0, 4, 0, 24, -240 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube39" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( -5, 0, 0, 0, 6.6, 0, 0, 0, 5, 15, 5, -248 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube40" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( -5, 0, 0, 0, 6.6, 0, 0, 0, 5, 15, 18, -248 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube41" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( -5, 0, 0, 0, 6.6, 0, 0, 0, 5, 5, 5, -248 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube42" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( -5, 0, 0, 0, 6.6, 0, 0, 0, 5, 5, 18, -248 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube43" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( -5, 0, 0, 0, 6.6, 0, 0, 0, 5, -5, 5, -248 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube44" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( -5, 0, 0, 0, 6.6, 0, 0, 0, 5, -5, 18, -248 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube45" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( -5, 0, 0, 0, 6.6, 0, 0, 0, 5, -15, 5, -248 )
+skeleton = NodePath("../Floor4")
+
+[node name="Cube46" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( -5, 0, 0, 0, 6.6, 0, 0, 0, 5, -15, 18, -248 )
+skeleton = NodePath("../Floor4")
+
+[node name="Floor1" parent="ArenaGeometry" instance=ExtResource( 6 )]
+
+[node name="Floor2" parent="ArenaGeometry" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -40 )
+
+[node name="Floor3" parent="ArenaGeometry" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -80 )
+
+[node name="Floor4" parent="ArenaGeometry" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -120 )
+
+[node name="Floor5" parent="ArenaGeometry" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -160 )
+
+[node name="Floor6" parent="ArenaGeometry" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -200 )
+
+[node name="Floor7" parent="ArenaGeometry" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -240 )
+
+[node name="Floor8" parent="ArenaGeometry" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 24, -272 )
+
+[node name="Wall2" parent="ArenaGeometry" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 4, 0, 0, 0, 1, 0, 22.75, -3 )
+
+[node name="Wall3" parent="ArenaGeometry" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 4, 0, -1, 0, -4.37114e-08, 20, 22.75, 0 )
+
+[node name="Wall7" parent="ArenaGeometry" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 4, 0, -1, 0, -4.37114e-08, 20, 22.75, -40 )
+
+[node name="Wall8" parent="ArenaGeometry" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 4, 0, -1, 0, -4.37114e-08, 20, 22.75, -80 )
+
+[node name="Wall4" parent="ArenaGeometry" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 4, 0, -1, 0, -4.37114e-08, -20, 22.75, 0 )
+
+[node name="Wall5" parent="ArenaGeometry" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 4, 0, -1, 0, -4.37114e-08, -20, 22.75, -40 )
+
+[node name="Wall6" parent="ArenaGeometry" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 4, 0, -1, 0, -4.37114e-08, -20, 22.75, -80 )
+
+[node name="Wall9" parent="ArenaGeometry" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 4, 0, -1, 0, -4.37114e-08, 20, 22.75, -120 )
+
+[node name="Wall10" parent="ArenaGeometry" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 4, 0, -1, 0, -4.37114e-08, -20, 22.75, -120 )
+
+[node name="Wall11" parent="ArenaGeometry" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 4, 0, -1, 0, -4.37114e-08, 20, 22.75, -160 )
+
+[node name="Wall12" parent="ArenaGeometry" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 4, 0, -1, 0, -4.37114e-08, -20, 22.75, -160 )
+
+[node name="Wall13" parent="ArenaGeometry" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 4, 0, -1, 0, -4.37114e-08, 20, 22.75, -200 )
+
+[node name="Wall14" parent="ArenaGeometry" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 4, 0, -1, 0, -4.37114e-08, -20, 22.75, -200 )
+
+[node name="Wall15" parent="ArenaGeometry" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 4, 0, -1, 0, -4.37114e-08, 20, 22.75, -280 )
+
+[node name="Wall16" parent="ArenaGeometry" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 4, 0, -1, 0, -4.37114e-08, -20, 22.75, -240 )
+
+[node name="Wall17" parent="ArenaGeometry" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 4, 0, -1, 0, -4.37114e-08, 20, 22.75, -240 )
+
+[node name="Wall18" parent="ArenaGeometry" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 4, 0, -1, 0, -4.37114e-08, -20, 22.75, -280 )
+
+[node name="Wall19" parent="ArenaGeometry" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 4, 0, -1, 0, -4.37114e-08, 20, 22.75, -320 )
+
+[node name="Wall20" parent="ArenaGeometry" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 4, 0, -1, 0, -4.37114e-08, -20, 22.75, -320 )
+
+[node name="Wall21" parent="ArenaGeometry" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 4, 0, -1, 0, -4.37114e-08, 20, 22.75, -360 )
+
+[node name="Wall22" parent="ArenaGeometry" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 4, 0, -1, 0, -4.37114e-08, -20, 22.75, -360 )
+
+[node name="SlopeEnd2" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 2, 0, 0, 0, 0.25, 0, 0, 0, 2, -31, 3.5, 17.5 )
+
+[node name="Slope3" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 3.2476, 0.125, 0, -1.875, 0.216506, 0, 0, 0, 2, -26.2623, 2.46384, 17.5 )
+
+[node name="Slope4" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 9.07736, 0.125, 0, -5.24081, 0.216506, 0, 0, 0, 5.5, -1.06045, 4.48578, -42.5225 )
+
+[node name="Slope5" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 10.3632, 0.105655, 8.30477e-07, 4.83243, -0.226577, 8.67873e-16, 1.5648e-06, 1.59534e-08, -5.5, -0.853689, 13.8311, -51.5 )
+
+[node name="Slope6" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 4.7352e-07, 1.8976e-09, -24, 1.91013, -0.246202, -3.95519e-15, -10.8329, -0.0434121, -1.04907e-06, -0.853997, 37.2871, -366.513 )
+
+[node name="Slope7" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 4.7352e-07, 1.8976e-09, -24, 1.91013, -0.246202, -3.95519e-15, -10.8329, -0.0434121, -1.04907e-06, -0.853999, 33.4939, -345.151 )
+
+[node name="Slope8" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 4.7352e-07, 1.8976e-09, -24, 1.91013, -0.246202, -3.95519e-15, -10.8329, -0.0434121, -1.04907e-06, -0.854, 26, -302.5 )
+
+[node name="Slope9" parent="ArenaGeometry" instance=ExtResource( 7 )]
+transform = Transform( 4.7352e-07, 1.8976e-09, -24, 1.91013, -0.246202, -3.95519e-15, -10.8329, -0.0434121, -1.04907e-06, -0.854, 29.6736, -323.485 )
+
+[node name="Lighting" type="Node" parent="."]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Lighting"]
+environment = ExtResource( 2 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="Lighting"]
+transform = Transform( -0.866026, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 5, 0 )
+shadow_enabled = true
+shadow_bias = 0.05
+directional_shadow_max_distance = 250.0
+
+[node name="DeathZone" parent="." instance=ExtResource( 3 )]
+transform = Transform( 20.16, 0, 0, 0, 1, 0, 0, 0, 44.9064, 0, 0, -111 )
+
+[node name="DeathZone2" parent="." instance=ExtResource( 3 )]
+transform = Transform( 20.16, 0, 0, 0, 1, 0, 0, 0, 44.9064, 0, 0, -203 )
+
+[node name="Trees" type="Spatial" parent="."]
+
+[node name="Tree" parent="Trees" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -10 )
+
+[node name="Tree7" parent="Trees" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -53 )
+
+[node name="Tree2" parent="Trees" instance=ExtResource( 8 )]
+transform = Transform( 1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, -12, 1, -24 )
+
+[node name="Tree4" parent="Trees" instance=ExtResource( 8 )]
+transform = Transform( 1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 15, 1, -24 )
+
+[node name="Tree6" parent="Trees" instance=ExtResource( 8 )]
+transform = Transform( 1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 2, 1, -9 )
+
+[node name="Tree5" parent="Trees" instance=ExtResource( 8 )]
+transform = Transform( 1.2, 0, 0, 0, 1.5, 0, 0, 0, 1.2, 14, 1, -11 )
+
+[node name="Tree3" parent="Trees" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -38 )
+
+[node name="Trees2" type="Spatial" parent="."]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 11, 25, -282 )
+
+[node name="Tree" parent="Trees2" instance=ExtResource( 8 )]
+
+[node name="Tree2" parent="Trees2" instance=ExtResource( 8 )]
+transform = Transform( 1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, -2, 0, -14 )
+
+[node name="Tree4" parent="Trees2" instance=ExtResource( 8 )]
+transform = Transform( 1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 25, 0, -14 )
+
+[node name="Tree6" parent="Trees2" instance=ExtResource( 8 )]
+transform = Transform( 1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 12, 0, 1 )
+
+[node name="Tree5" parent="Trees2" instance=ExtResource( 8 )]
+transform = Transform( 1.2, 0, 0, 0, 1.5, 0, 0, 0, 1.2, 24, 0, -1 )
+
+[node name="Tree7" parent="Trees2" instance=ExtResource( 8 )]
+transform = Transform( 1.2, 0, 0, 0, 1.5, 0, 0, 0, 1.2, -5, 0, -27 )
+
+[node name="Tree3" parent="Trees2" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, -28 )
+
+[node name="Enemies" type="Spatial" parent="."]
+
+[node name="BadGuy" parent="Enemies" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 20, -63 )
+
+[node name="MeshInstance" parent="Enemies/BadGuy" index="0"]
+material/0 = SubResource( 1 )
+
+[node name="BadGuy2" parent="Enemies" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 20, -63 )
+
+[node name="MeshInstance" parent="Enemies/BadGuy2" index="0"]
+material/0 = SubResource( 2 )
+
+[node name="BadGuy3" parent="Enemies" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 20, -63 )
+
+[node name="MeshInstance" parent="Enemies/BadGuy3" index="0"]
+material/0 = SubResource( 3 )
+
+[node name="BadGuy4" parent="Enemies" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 20, -63 )
+
+[node name="MeshInstance" parent="Enemies/BadGuy4" index="0"]
+material/0 = SubResource( 4 )
+
+[node name="BadGuy5" parent="Enemies" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 20, -63 )
+
+[node name="MeshInstance" parent="Enemies/BadGuy5" index="0"]
+material/0 = SubResource( 5 )
+
+[node name="BadGuy6" parent="Enemies" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 20, -63 )
+
+[node name="BadGuy7" parent="Enemies" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 23, -156 )
+
+[node name="MeshInstance" parent="Enemies/BadGuy7" index="0"]
+material/0 = SubResource( 6 )
+
+[node name="BadGuy8" parent="Enemies" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 23, -156 )
+
+[node name="MeshInstance" parent="Enemies/BadGuy8" index="0"]
+material/0 = SubResource( 7 )
+
+[node name="BadGuy9" parent="Enemies" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 23, -156 )
+
+[node name="MeshInstance" parent="Enemies/BadGuy9" index="0"]
+material/0 = SubResource( 8 )
+
+[node name="BadGuy10" parent="Enemies" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 23, -156 )
+
+[node name="MeshInstance" parent="Enemies/BadGuy10" index="0"]
+material/0 = SubResource( 9 )
+
+[node name="BadGuy11" parent="Enemies" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 23, -156 )
+
+[node name="MeshInstance" parent="Enemies/BadGuy11" index="0"]
+material/0 = SubResource( 10 )
+
+[node name="BadGuy12" parent="Enemies" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 23, -156 )
+
+[node name="MeshInstance" parent="Enemies/BadGuy12" index="0"]
+material/0 = SubResource( 11 )
+
+[node name="BadGuy13" parent="Enemies" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 26, -249 )
+
+[node name="MeshInstance" parent="Enemies/BadGuy13" index="0"]
+material/0 = SubResource( 12 )
+
+[node name="BadGuy14" parent="Enemies" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 26, -249 )
+
+[node name="MeshInstance" parent="Enemies/BadGuy14" index="0"]
+material/0 = SubResource( 13 )
+
+[node name="BadGuy15" parent="Enemies" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 26, -249 )
+
+[node name="MeshInstance" parent="Enemies/BadGuy15" index="0"]
+material/0 = SubResource( 14 )
+
+[node name="BadGuy16" parent="Enemies" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 26, -249 )
+
+[node name="MeshInstance" parent="Enemies/BadGuy16" index="0"]
+material/0 = SubResource( 15 )
+
+[node name="BadGuy17" parent="Enemies" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 26, -249 )
+
+[node name="MeshInstance" parent="Enemies/BadGuy17" index="0"]
+material/0 = SubResource( 16 )
+
+[node name="BadGuy18" parent="Enemies" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 26, -249 )
+
+[node name="MeshInstance" parent="Enemies/BadGuy18" index="0"]
+material/0 = SubResource( 17 )
+
+[editable path="Enemies/BadGuy"]
+[editable path="Enemies/BadGuy2"]
+[editable path="Enemies/BadGuy3"]
+[editable path="Enemies/BadGuy4"]
+[editable path="Enemies/BadGuy5"]
+[editable path="Enemies/BadGuy6"]
+[editable path="Enemies/BadGuy7"]
+[editable path="Enemies/BadGuy8"]
+[editable path="Enemies/BadGuy9"]
+[editable path="Enemies/BadGuy10"]
+[editable path="Enemies/BadGuy11"]
+[editable path="Enemies/BadGuy12"]
+[editable path="Enemies/BadGuy13"]
+[editable path="Enemies/BadGuy14"]
+[editable path="Enemies/BadGuy15"]
+[editable path="Enemies/BadGuy16"]
+[editable path="Enemies/BadGuy17"]
+[editable path="Enemies/BadGuy18"]

@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://asset/P38/P38.FBX" type="PackedScene" id=1]
+[ext_resource path="res://Levels/Main/Materials/M_Dark.tres" type="Material" id=2]
+
+[node name="P38" instance=ExtResource( 1 )]
+
+[node name="Barrel" parent="RootNode" index="0"]
+transform = Transform( -0.999999, -8.75443e-08, -0.00158009, 0.00158009, -1.19209e-07, -0.999999, 8.73115e-08, -1, 1.78814e-07, 0, 0, 0 )
+material/0 = ExtResource( 2 )
+
+[node name="hammer" parent="RootNode" index="1"]
+transform = Transform( -0.999999, -1.51282e-07, -0.00157991, 0.00157991, -1.19209e-07, -0.999999, 1.51049e-07, -1, 1.78814e-07, 0, 0, 0 )
+material/0 = ExtResource( 2 )
+
+[node name="frame" parent="RootNode" index="2"]
+transform = Transform( -0.999999, -1.51282e-07, -0.00157991, 0.00157991, -1.19209e-07, -0.999999, 1.51049e-07, -1, 1.78814e-07, 0, 0, 0 )
+material/0 = ExtResource( 2 )
+
+[node name="mag" parent="RootNode" index="3"]
+transform = Transform( -0.999999, -1.51282e-07, -0.00157991, 0.00157991, -1.19209e-07, -0.999999, 1.51049e-07, -1, 1.78814e-07, 0, 0, 0 )
+material/0 = ExtResource( 2 )
+
+[node name="trigger" parent="RootNode" index="4"]
+transform = Transform( -0.999999, -1.51282e-07, -0.00157991, 0.00157991, -1.19209e-07, -0.999999, 1.51049e-07, -1, 1.78814e-07, 0, 0, 0 )
+material/0 = ExtResource( 2 )

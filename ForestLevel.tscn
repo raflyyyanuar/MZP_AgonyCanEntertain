@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Levels/Main/Geometry/Floor.tscn" type="PackedScene" id=2]
+
+[node name="ForestLevel" type="Spatial"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.62571, 0 )
+
+[node name="ForestGeometry" type="Spatial" parent="."]
+
+[node name="Floor" parent="ForestGeometry" instance=ExtResource( 2 )]
